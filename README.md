@@ -30,13 +30,21 @@ t = np.linspace(-np.pi, np.pi, 1000)
 K = kernel('dirichlet', -np.pi, np.pi, 10)
 K.convolve(t, show=True)
 ```
+
+Para cada núcleo, tendremos
+
+*Núcleo de Dirichlet.
+
 ![Aproximación Dirichlet](imagenes/Poi_f.png)
 
 *Núcleo de Fejér.
+
 ![Aproximación Dirichlet](imagenes/Fej_f.png)
 
 *Núcleo de Poisson.
+
 ![Aproximación Poisson](imagenes/Poi_f.png)
 
 *Núcleo del calor.
+
 ![Aproximación calor](imagenes/calor_f.png)
