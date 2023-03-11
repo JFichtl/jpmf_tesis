@@ -33,18 +33,18 @@ K.convolve(t, show=True)
 
 Para cada núcleo, tendremos
 
-*Núcleo de Dirichlet.
+* Núcleo de Dirichlet.
 
 ![Aproximación Dirichlet](imagenes/Poi_f.png)
 
-*Núcleo de Fejér.
+* Núcleo de Fejér.
 
 ![Aproximación Dirichlet](imagenes/Fej_f.png)
 
-*Núcleo de Poisson.
+* Núcleo de Poisson.
 
 ![Aproximación Poisson](imagenes/Poi_f.png)
 
-*Núcleo del calor.
+* Núcleo del calor.
 
-![Aproximación calor](imagenes/calor_f.png)
+![Aproximación calor](imagenes/cal_f.png)
