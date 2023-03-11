@@ -35,7 +35,7 @@ Para cada núcleo, tendremos
 
 * Núcleo de Dirichlet.
 
-![Aproximación Dirichlet](imagenes/Poi_f.png)
+![Aproximación Dirichlet](imagenes/Dir_f.png)
 
 * Núcleo de Fejér.
 
