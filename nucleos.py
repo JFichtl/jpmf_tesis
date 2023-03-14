@@ -55,7 +55,7 @@ class kernel:
             return  (1/B) * (1-pow(r,2))/(1-2*r*np.cos(x) + pow(r,2))
         elif self.name == 'heat':
             t = 1/(n+1)
-            return (1/pow(4*np.pi*t, 0.5)) * np.exp(-pow(x/pow(4*t, 0.5) , 2))
+            return (2*np.pi/B)*(1/pow(4*np.pi*t, 0.5)) * np.exp(-pow(x/pow(4*t, 0.5) , 2))
 
 
     def convolve(self, array, show = False, null=False, mode = 'circular'):
@@ -77,6 +77,7 @@ class kernel:
             return t_conv, convolution
             
     def approximate(self, array, start=1, end=10, skip=1):
+        plt.clf()
         mode = 'circular'
         if self.name == 'heat':
             mode = 'linear'
@@ -87,6 +88,7 @@ class kernel:
             x, y = self.convolve(array, mode=mode)
             plt.plot(x, y, label = f"k = {i}", alpha = 1 - 0.5*(i/end) )
         self.values = self.ker_generator(self.n)
+        plt.title(f"Aproximación de f usando el núcleo de {trad[self.name]}")
         plt.legend()
         plt.show()
         
